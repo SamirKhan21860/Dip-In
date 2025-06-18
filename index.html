@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dip In</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="glass-circle"></div>
+    <header class="navbar">
+      <div class="logo">Dip In</div>
+      <nav class="nav-content">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mode-toggle" id="modeToggle" title="Toggle light/dark mode">
+          <svg
+            id="themeIcon"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            width="20"
+            height="20"
+          >
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Where AI, Design & Code Dip into Innovation</h1>
+        <p>Smart, scalable, and striking digital experiences</p>
+        <button id="exploreBtn">Explore More</button>
+      </section>
+
+      <section id="testimonials" data-reveal>
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+          <img src="https://via.placeholder.com/60" alt="Client photo" />
+          <p>
+            "Dip In transformed our web app and AI pipeline—clean code, sharp
+            design, real results."
+          </p>
+          <strong>— Alex Johnson, CEO of DataNova</strong>
+        </div>
+        <div class="testimonial">
+          <img src="https://via.placeholder.com/60" alt="Client photo" />
+          <p>"Brilliant UX and seamless integrations. Highly recommended."</p>
+          <strong>— Maria Lopez, CTO of FinTechFlow</strong>
+        </div>
+      </section>
+
+      <section id="about" class="section" data-reveal>
+        <h2>About Us</h2>
+        <p>
+          At Dip In, we craft intelligent digital experiences that fuse the
+          power of artificial intelligence, modern design principles, and robust
+          code architecture. We explore the layered depth of innovation —
+          dipping below the surface to build software that’s smart, scalable,
+          and striking.
+        </p>
+      </section>
+
+      <section id="vision" class="section">
+        <h2>Our Vision</h2>
+        <p>
+          Inspired by the concept of "Level 0" — the foundational core — our
+          work represents the convergence of depth, clarity, and function. Every
+          project is a journey inward, through layers of ideation, design, and
+          development.
+        </p>
+      </section>
+
+      <section id="services" class="section">
+        <h2>What We Build</h2>
+        <ul class="services-list">
+          <li>AI-Driven Web Applications</li>
+          <li>SaaS Product Development</li>
+          <li>UI/UX & Design Systems</li>
+          <li>Automation & Data-Powered Tools</li>
+          <li>Frontend & Backend Architectures</li>
+          <li>Cloud-Native Microservices</li>
+          <li>Real-Time Dashboards & Data Visualization</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Insight AI</h3>
+            <p>
+              An AI-powered analytics dashboard that provides real-time insights
+              into business metrics using natural language queries.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>WebFlow CMS</h3>
+            <p>
+              A no-code, drag-and-drop SaaS platform that helps small businesses
+              launch fast, responsive websites in minutes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Dip In. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
