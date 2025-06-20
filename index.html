@@ -20,9 +20,10 @@
           <li><a href="#vision">Vision</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#ebooks">Ebooks</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mode-toggle" id="modeToggle" title="Toggle light/dark mode">
+        <button class="mode-toggle" id="modeToggle" title="Toggle light/dark mode">
           <svg
             id="themeIcon"
             viewBox="0 0 24 24"
@@ -32,7 +33,7 @@
           >
             <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
           </svg>
-        </div>
+        </button>
       </nav>
     </header>
 
@@ -45,18 +46,20 @@
 
       <section id="testimonials" data-reveal>
         <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-          <img src="https://via.placeholder.com/60" alt="Client photo" />
-          <p>
-            "Dip In transformed our web app and AI pipeline—clean code, sharp
-            design, real results."
-          </p>
-          <strong>— Alex Johnson, CEO of DataNova</strong>
-        </div>
-        <div class="testimonial">
-          <img src="https://via.placeholder.com/60" alt="Client photo" />
-          <p>"Brilliant UX and seamless integrations. Highly recommended."</p>
-          <strong>— Maria Lopez, CTO of FinTechFlow</strong>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Client photo" />
+            <p>
+              "Dip In transformed our web app and AI pipeline—clean code, sharp
+              design, real results."
+            </p>
+            <strong>— Alex Johnson, CEO of DataNova</strong>
+          </div>
+          <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Client photo" />
+            <p>"Brilliant UX and seamless integrations. Highly recommended."</p>
+            <strong>— Maria Lopez, CTO of FinTechFlow</strong>
+          </div>
         </div>
       </section>
 
@@ -66,7 +69,7 @@
           At Dip In, we craft intelligent digital experiences that fuse the
           power of artificial intelligence, modern design principles, and robust
           code architecture. We explore the layered depth of innovation —
-          dipping below the surface to build software that’s smart, scalable,
+          dipping below the surface to build software that's smart, scalable,
           and striking.
         </p>
       </section>
@@ -110,6 +113,57 @@
               A no-code, drag-and-drop SaaS platform that helps small businesses
               launch fast, responsive websites in minutes.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ebooks" class="section" data-reveal>
+        <h2>Free Ebooks</h2>
+        <p>Download our comprehensive guides to master modern web development and AI integration.</p>
+        <div class="ebooks-grid">
+          <div class="ebook-card">
+            <div class="ebook-cover">
+              📚
+            </div>
+            <h3 class="ebook-title">AI-Powered Web Development</h3>
+            <p class="ebook-author">by Dip In Team</p>
+            <p class="ebook-description">
+              Learn how to integrate AI into your web applications with practical examples and best practices.
+            </p>
+            <button class="download-btn" onclick="downloadEbook('ai-web-development.pdf')">
+              <span class="download-icon">⬇</span>
+              Download PDF
+            </button>
+          </div>
+          
+          <div class="ebook-card">
+            <div class="ebook-cover cover-2">
+              🎨
+            </div>
+            <h3 class="ebook-title">Modern UI/UX Design Guide</h3>
+            <p class="ebook-author">by Dip In Design Team</p>
+            <p class="ebook-description">
+              Master the principles of modern interface design with real-world case studies and design systems.
+            </p>
+            <button class="download-btn" onclick="downloadEbook('modern-uiux-guide.pdf')">
+              <span class="download-icon">⬇</span>
+              Download PDF
+            </button>
+          </div>
+          
+          <div class="ebook-card">
+            <div class="ebook-cover cover-3">
+              ⚡
+            </div>
+            <h3 class="ebook-title">Full Stack Development Roadmap</h3>
+            <p class="ebook-author">by Dip In Developers</p>
+            <p class="ebook-description">
+              Complete roadmap from frontend to backend, including cloud deployment and DevOps practices.
+            </p>
+            <button class="download-btn" onclick="downloadEbook('fullstack-roadmap.pdf')">
+              <span class="download-icon">⬇</span>
+              Download PDF
+            </button>
           </div>
         </div>
       </section>
